@@ -1,0 +1,35 @@
+<head>
+  <title>preplist</title>
+</head>
+
+<body>
+	<div class="nav_bar">{{>nav}}</div><br>
+	
+  <div class="content">
+		{{#if currentUser}}
+	  	{{> content}}
+	  	{{> add_todo}}
+  	{{/if}}
+  </div>
+</body>
+<template name="main">
+	
+</template>
+<template name="content">
+	<h1>Logged in</h1>
+</template>
+<template name="nav">
+	<nav class="navbar navbar-default navbar-static-top" role="navigation">
+		<ul class="nav navbar-nav">
+			<li class="login">
+				{{> loginButtons align="right"}}
+			</li>
+		</ul>
+	</nav>
+</template>
+<template name="add_todo">
+	<input type="text" name="" id="input" class="form-control" value=""  pattern="" title="">
+	<button type="submit" class="btn btn-primary" id="add_item">Submit</button>
+	{{list}}
+</template>
+
