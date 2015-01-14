@@ -1,35 +1,102 @@
 <head>
-  <title>preplist</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example that shows off a responsive product landing page.">
+
+    <title>The Best Fucking Startup</title>
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<!--[if lte IE 8]>
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+  
+<![endif]-->
+<!--[if gt IE 8]><!-->
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+  
+<!--<![endif]-->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/marketing.css">
+    <!--<![endif]-->
 </head>
-
 <body>
-	<div class="nav_bar">{{>nav}}</div><br>
-	
-  <div class="content">
-		{{#if currentUser}}
-	  	{{> content}}
-	  	{{> add_todo}}
-  	{{/if}}
-  </div>
-</body>
-<template name="main">
-	
-</template>
-<template name="content">
-	<h1>Logged in</h1>
-</template>
-<template name="nav">
-	<nav class="navbar navbar-default navbar-static-top" role="navigation">
-		<ul class="nav navbar-nav">
-			<li class="login">
-				{{> loginButtons align="right"}}
-			</li>
-		</ul>
-	</nav>
-</template>
-<template name="add_todo">
-	<input type="text" name="" id="input" class="form-control" value=""  pattern="" title="">
-	<button type="submit" class="btn btn-primary" id="add_item">Submit</button>
-	{{list}}
-</template>
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">Your Site</a>
 
+        <ul>
+            <li class="pure-menu-selected"><a href="#">Home</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="splash-container">
+    <div class="splash">
+        <h1 class="splash-head">Valueless Market</h1>
+        <p class="splash-subhead">
+            The Best Place to Buy Worthless Stuff.
+        </p>
+        <p>
+            <!-- <a class="pure-button pure-button-primary">Buy Now</a> -->
+        </p>
+    </div>
+</div>
+
+<div class="content-wrapper">
+    <div class="ribbon l-box-lrg pure-g">
+    </div>
+    <div class="content">
+        <h2 class="content-head is-center">One person's trash is another man's come up, probably.</h2>
+        <div class="pure-g">
+            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+                <form class="pure-form pure-form-stacked">
+                    <fieldset>
+
+                        <label for="name">Your Name</label>
+                        <input id="name" type="text" placeholder="Your Name">
+
+
+                        <label for="email">Your Email</label>
+                        <input id="email" type="email" placeholder="Your Email">
+
+                        <label for="password">Your Password</label>
+                        <input id="password" type="password" placeholder="Your Password">
+
+                        <button type="submit" class="pure-button">Sign Up</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+                <h4>Contact Us</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </p>
+                <h4>More Information</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+   
+</div>
+
+
+
+
+
+
+</body>

@@ -8,11 +8,9 @@ meteor-platform
 autopublish
 insecure
 iron:router
-nemo64:bootstrap
 less
 accounts-facebook
 houston:admin
 accounts-ui
 service-configuration
-
-bootstrap
+lampe:purecss
